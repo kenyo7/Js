@@ -124,15 +124,15 @@ if (isNaN(number) || isNaN(number2)){
 	message += number + " / " + number2 + " = " + (number / number2);
 
 	document.write(message);
-}*/
+}
 
 
+*/
+
+//QUIZ APPLICATION.
 
 
-/*QUIZ APPLICATION.
-
-var score = 0
-var question1 = prompt('How Many continents are there?');
+/*var question1 = prompt('How Many continents are there?');
 var question1Answer = 5 
 
 var question2 = prompt('What is that name of this programing language?');
@@ -147,9 +147,11 @@ var question4Answer = 2018
 var question5 = prompt('who was the champion?');
 var question5Answer = 'france'
 
+
 if (parseInt(question1) === question1Answer){
 	score += 1
 }
+
 if (question2.toUpperCase() === question2Answer){
 	score += 1 
 }	
@@ -163,6 +165,7 @@ if (question5.toLowerCase() === question5Answer){
 	score += 1
 		
 }	
+
 if (score){
 	document.write('you got ' + score + ' right answers. ');
 }
@@ -177,8 +180,8 @@ if (score === 5){
 	
 } else {
 	document.write('Sorry your score was 0, try again');
-}*/
-
+}
+*/
 
 /* TEACHER'S CODE FOR Quiz
 
@@ -377,7 +380,7 @@ while (i <= 50) {
  document.write(text);
  
 }
-*/
+
 let i = 5;
 let text;
 do {text =  i + ' ';
@@ -386,19 +389,127 @@ do {text =  i + ' ';
  document.write(text);
 }
 while (i <= 50) 
- 
 
 
+ var arrayList = [1,2,3,4,5];
+ arrayList.push(6,7,8);     //Adds an item to the end of the list
+ arrayList.unshift('hello') //Adds an item to the statt of the list
+ arrayList.pop();           //Removes the last item in the list    
+ arrayList.shift();         //Removes the first item in the list 
+ document.write(arrayList); 
+*/ 
  
+/*var temperatures = [100,90,99,80,70,65,30,10, 'hello'];
+var list = ['uno,', 'dos, ' ,'tres.'];
+var temperatures1 = temperatures.concat(list);
+document.write(temperatures1);
+var search; 
+//for (i = 0; i < temperatures.length; i += 1) {
+// console.log(temperatures[i]);
+function print (message) {
+	
+	document.write(message) 
+}
+ while(true) {
+	search = prompt('search something');
+	
+	if (search === "quit") {
+		break;
+	} else if (search ==='list'){
+		print(temperatures);
+	}
+ }
+
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+var all = months.join(', ')
+
+Consolo.log(months)
+*/
+
+/* QUIZ 2 EXERCISE
+var score = 0; 
+var quiz2 = [
+	['How Many continents are there?', 5],
+	['What is that name of this programing language?', 10],
+	['What is that name of England capital?', 20],
+];
+
+for(i = 0; i < quiz2.length; i += 1){  
+var questions = parseInt(prompt(quiz2[i][0]));
+
+	if (questions === quiz2[0][1]) {
+    score +=1
+	}
+	if (questions === quiz2[1][1]) {
+ 	score +=1
+	}
+	if (questions === quiz2[2][1]) {
+    score +=1
+	}
+}	
+if (score){
+	document.write('you got ' + score + ' right answers. ');
+	}
+
+
+if (score === 3){
+	document.write('Congratulations you won a gold crown!');
+} else if (score === 2){
+	document.write('Congratulations you won a silver crown!');
+	
+} else if (score === 1){
+	document.write('Congratulations you won a bronze crown!');
+	
+} else {
+	document.write('Sorry your score was 0, try again');
+}	
+*/
+// OBJECTS
+var person = {
+	name: 'Kevin',
+	country: 'El Salvador',
+	age: 33,
+	treehouseStudent: true,
+	skills: ['JavaScript', 'HTML', 'CSS']
+};
+function print(message){
+	var div = document.getElementById('output');
+	div.innerHTML = message;
+}
+var message = '<p>Hello my name is '+ person.name + '</p>';
+message += '<p>I am ' + person.age + ' years old' + '</p>';
+
+print(message);
+
+for (var element in person){
+	console.log(element, ': ', person[element])
+};
+// ARRAY OF OBJECTS
+var tasks = [
+  {
+      name: "Do homework",
+      due: "01/27/2016",
+      complete: false,
+      assignedTo: "Dave"
+  },
+ {
+      name: "Go to gym",
+      due: "01/27/2015",
+      complete: true,
+      assignedTo: "Cecilia"
+  },
+ {
+      name: "Complete JavaScript course",
+      due: "05/27/2015",
+      complete: false,
+      assignedTo: "You"
+  }
+];
+
+
+
+
+
+
+
