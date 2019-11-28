@@ -466,7 +466,7 @@ if (score === 3){
 }	
 */
 // OBJECTS
-var person = {
+/*var person = {
 	name: 'Kevin',
 	country: 'El Salvador',
 	age: 33,
@@ -506,7 +506,7 @@ var tasks = [
       assignedTo: "You"
   }
 ];
-
+*/
 
 
 
